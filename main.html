@@ -3,11 +3,57 @@
 <html>
 
 <head>
+	<style>
+		.root{
+			background-color:rgb(135,206,235);
+		}
+		.first-child{
+			color:white;
+			background-color:black;
+		}
+		.nth-child(2){
+			color:black;
+		}
+		.last-child{
+			color:red;
+		}
+
+		li {
+  background-color: gray; /* Default for all items */
+			width:50%;
+			padding:10px;
+}
+
+li:nth-child(odd) {
+  background-color: white; /* Override for odd items */
+	width:50%;
+			padding:10px;
+
+}
+		#item3{
+			background-color:pink;
+		}
+		#item1,#item5{
+			font-size:22px;
+		}
+	</style>
 	<link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="root">
 	<!-- the entire body must be written by student -->
+	<p class="first-child">First Paragraph</p>
+		<p>lorem10vjhfbsjkfhdfihb,jvbisfbkjfbhdsoifvbskvjhsfi</p>
+	<p class="nth-child(2)">kjfnljenfklnglknglkenflkebjef glneglbegjlnelgkengloerhnlkerngkjebgjebgaelkj</p>
+	<p class="last-child">edfjhekgherkhfuekhehkehgkehgukehgkeg</p>
+<ul>
+	<li id="item1">First Item</li>
+	<li id="item2"> Second Item</li>
+	<li id="item3">Third Item</li>
+	<li id="item4">Fourth Item</li>
+	<li id="item5">Fifth Item</li>
+</ul>
+	
     <script type="text/javascript" src="./script.js">
 </script>
 
